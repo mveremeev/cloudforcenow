@@ -1,0 +1,283 @@
+/* CloudForceNow — no custom palette: every colour is the terminal's own. */
+
+Screen {
+    background: ansi_default;
+    color: ansi_default;
+}
+
+/* ── top bar ─────────────────────────────────────────── */
+
+#topbar {
+    height: 2;
+    padding: 1 2 0 1;
+    background: transparent;
+}
+
+#brand {
+    width: 1fr;
+    color: ansi_magenta;
+    text-style: bold;
+    background: transparent;
+}
+
+#account {
+    width: auto;
+    text-align: right;
+    padding-right: 1;
+    background: transparent;
+}
+
+/* ── tabs ────────────────────────────────────────────── */
+
+TabbedContent {
+    height: 1fr;
+}
+
+Tabs {
+    background: transparent;
+    margin: 0 1;
+}
+
+Tab {
+    color: ansi_bright_black;
+    text-style: none;
+}
+
+Tab.-active, Tab.-active:hover {
+    color: ansi_magenta;
+    text-style: bold;
+    background: transparent;
+}
+
+Underline > .underline--bar {
+    color: ansi_magenta;
+    background: transparent;
+}
+
+TabPane {
+    padding: 1 2 0 2;
+    background: transparent;
+}
+
+/* ── status lines ────────────────────────────────────── */
+
+.statusline {
+    height: 1;
+    margin: 0 1 1 1;
+    background: transparent;
+}
+
+/* ── tables ──────────────────────────────────────────── */
+
+DataTable {
+    height: 1fr;
+    background: transparent;
+    border: none;
+}
+
+DataTable > .datatable--header {
+    background: transparent;
+    color: ansi_bright_black;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: ansi_blue;
+    color: ansi_bright_white;
+}
+
+/* ── login ───────────────────────────────────────────── */
+
+#login-box {
+    width: 52;
+    height: auto;
+    padding: 1 3;
+    border: round ansi_bright_black;
+    background: transparent;
+}
+
+#login-logo {
+    text-align: center;
+    color: ansi_magenta;
+    margin-bottom: 1;
+    background: transparent;
+}
+
+#login-sub {
+    width: 100%;
+    text-align: center;
+    color: ansi_bright_black;
+    margin-bottom: 1;
+    background: transparent;
+}
+
+#login-box Input {
+    margin-bottom: 1;
+}
+
+#login-box Button {
+    width: 100%;
+}
+
+#login-hint {
+    margin-top: 1;
+    text-align: center;
+    background: transparent;
+}
+
+/* ── modals ──────────────────────────────────────────── */
+
+ConfirmModal, FiltersModal {
+    align: center middle;
+    background: transparent;
+}
+
+.modal-box {
+    width: 62;
+    height: auto;
+    padding: 1 2;
+    border: round ansi_bright_black;
+    background: ansi_default;
+}
+
+.modal-box.danger {
+    border: round ansi_red;
+}
+
+.modal-title {
+    text-style: bold;
+    color: ansi_magenta;
+    margin-bottom: 1;
+    background: transparent;
+}
+
+.modal-body {
+    margin-bottom: 1;
+    background: transparent;
+}
+
+.field-label {
+    color: ansi_bright_black;
+    margin-top: 1;
+    background: transparent;
+}
+
+#advanced {
+    margin-top: 1;
+    border: none;
+    background: transparent;
+}
+
+#advanced CollapsibleTitle {
+    color: ansi_magenta;
+    background: transparent;
+}
+
+#advanced Contents {
+    padding: 0 0 0 1;
+}
+
+#series-row {
+    height: auto;
+}
+
+#series-row Checkbox {
+    width: 1fr;
+    margin: 0;
+    border: none;
+    background: transparent;
+}
+
+.adv-row {
+    height: auto;
+}
+
+.adv-field {
+    width: 1fr;
+    height: auto;
+}
+
+.adv-field:first-of-type {
+    margin-right: 3;
+}
+
+.modal-buttons {
+    height: auto;
+    margin-top: 1;
+    align-horizontal: right;
+    background: transparent;
+}
+
+.modal-buttons Button {
+    margin-left: 1;
+    min-width: 12;
+}
+
+/* ── chrome ──────────────────────────────────────────── */
+
+Footer {
+    background: transparent;
+    color: ansi_bright_black;
+}
+
+Footer FooterKey {
+    background: transparent;
+    color: ansi_magenta;
+}
+
+Input {
+    background: transparent;
+    border: round ansi_bright_black;
+}
+
+Input:focus {
+    border: round ansi_magenta;
+}
+
+Select > SelectCurrent {
+    background: transparent;
+    border: round ansi_bright_black;
+}
+
+Select:focus > SelectCurrent {
+    border: round ansi_magenta;
+}
+
+SelectOverlay {
+    background: ansi_default;
+    border: round ansi_bright_black;
+}
+
+Button {
+    border: round ansi_bright_black;
+    background: transparent;
+    color: ansi_default;
+    text-style: none;
+}
+
+Button:focus {
+    text-style: bold;
+}
+
+Button.-primary {
+    background: transparent;
+    border: round ansi_magenta;
+    color: ansi_magenta;
+}
+
+Button.-success {
+    background: transparent;
+    border: round ansi_green;
+    color: ansi_green;
+}
+
+Button.-error {
+    background: transparent;
+    border: round ansi_red;
+    color: ansi_red;
+}
+
+Toast {
+    background: ansi_default;
+    border: round ansi_bright_black;
+}
